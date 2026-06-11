@@ -6,11 +6,11 @@
 <title>SoaVia – Il navigatore per chi vuole viaggiare senza paura</title>
 <meta name="description" content="SoaVia è il navigatore anti-nausea che evita curve, gallerie e ponti. Scegli il percorso più comodo, non solo il più veloce. Per chi soffre di mal d'auto, paura delle gallerie o dei ponti.">
 <meta name="keywords" content="navigatore anti-nausea, mal d'auto, paura gallerie, paura ponti, evitare curve, cinetosi, navigatore comfort, fobia gallerie">
-<link rel="canonical" href="https://saferoute.app/">
+<link rel="canonical" href="https://soavia.app/">
 <meta property="og:title" content="SoaVia – Guida senza paura">
 <meta property="og:description" content="Il navigatore che evita curve, gallerie e ponti. Viaggia sereno.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://saferoute.app/">
+<meta property="og:url" content="https://soavia.app/">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -45,10 +45,23 @@
 <div class="container">
   <h1>Il navigatore per chi vuole <span>viaggiare senza paura</span></h1>
   <p>SoaVia analizza ogni percorso e ti mostra in anticipo curve, gallerie e ponti. Scegli la strada più comoda, non solo la più veloce.</p>
-  <a class="btn-store" href="https://play.google.com/store/apps/details?id=com.saferoute.pro.app" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.405l2.302 1.33-2.883 1.67-2.523-2.523 3.104-2.477zM5.864 2.658L16.8 8.991l-2.302 2.302L5.864 2.658z"/></svg>
-    Scarica su Google Play
-  </a>
+  
+  <!-- FORM DI ISCRIZIONE HERO -->
+  <div style="margin-top: 30px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; max-width: 500px;">
+    <h3 style="margin-top: 0; font-size: 1.1rem; margin-bottom: 15px;">L'app è in arrivo!</h3>
+    <form onsubmit="inviaModulo(event)" style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <input type="text" name="nome" placeholder="Il tuo nome" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc; flex: 1; min-width: 150px; font-family: inherit;">
+        <input type="email" name="email" placeholder="La tua email" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc; flex: 1; min-width: 200px; font-family: inherit;">
+      </div>
+      <button type="submit" style="padding: 14px; background-color: #1FC8B4; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: background 0.3s;">
+        Fammi sapere quando è pronta
+      </button>
+    </form>
+    <p style="font-size: 0.85rem; margin-top: 10px; margin-bottom: 0; opacity: 0.9;">
+      Inserisci i tuoi dati e verrai ricontattato non appena l'app sarà scaricabile dal Play Store.
+    </p>
+  </div>
 </div>
 </section>
 
@@ -134,11 +147,24 @@
 <section class="cta-bottom">
 <div class="container">
   <h2>Viaggiare non deve essere un disagio</h2>
-  <p>Con SoaVia sai sempre cosa ti aspetta, prima di partire.</p>
-  <a class="btn-store" href="https://play.google.com/store/apps/details?id=com.saferoute.pro.app" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.405l2.302 1.33-2.883 1.67-2.523-2.523 3.104-2.477zM5.864 2.658L16.8 8.991l-2.302 2.302L5.864 2.658z"/></svg>
-    Scarica su Google Play
-  </a>
+  <p>Con SoaVia sai sempre cosa ti aspetta, prima di partire. L'app sarà presto disponibile!</p>
+  
+  <!-- FORM DI ISCRIZIONE BOTTOM -->
+  <div style="margin: 30px auto 0 auto; max-width: 500px; text-align: left;">
+    <form onsubmit="inviaModulo(event)" style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <input type="text" name="nome" placeholder="Il tuo nome" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc; flex: 1; min-width: 150px; font-family: inherit;">
+        <input type="email" name="email" placeholder="La tua email" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc; flex: 1; min-width: 200px; font-family: inherit;">
+      </div>
+      <button type="submit" style="padding: 14px; background-color: #1FC8B4; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: background 0.3s;">
+        Avvisami quando è pronta
+      </button>
+    </form>
+    <p style="font-size: 0.85rem; margin-top: 10px; text-align: center; color: #666;">
+      Lascia nome ed email per ricevere una notifica al lancio.
+    </p>
+  </div>
+
 </div>
 </section>
 
@@ -147,6 +173,34 @@
   <p>SoaVia &copy; 2026 &middot; <a href="/privacy">Privacy Policy</a> &middot; Funziona in tutta Europa</p>
 </div>
 </footer>
+
+<!-- SCRIPT PER INVIO DATI A GOOGLE SHEETS -->
+<script>
+  function inviaModulo(event) {
+    event.preventDefault(); // Evita che la pagina si ricarichi
+    const form = event.target;
+    const data = new FormData(form);
+    
+    // Il tuo URL webhook di Google Apps Script
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3_UJjBJ1ajuXNE6w1IYmeQX-4_TCzRFp1I6BM9_1utjmKxVD0wl0oNUr3BldOU5_tsw/exec';
+
+    const btn = form.querySelector('button');
+    const originalText = btn.innerText;
+    btn.innerText = 'Invio in corso...'; // Feedback visivo
+
+    // Esegue la chiamata POST in background
+    fetch(scriptURL, { method: 'POST', body: data, mode: 'no-cors' })
+      .then(() => {
+        // Sostituisce i campi di input con il messaggio di conferma
+        form.innerHTML = '<p style="color: #1FC8B4; font-weight: bold; font-size: 1.1rem; margin: 0; text-align: center; padding: 10px;">Grazie! I tuoi dati sono stati salvati. Ti contatteremo presto.</p>';
+      })
+      .catch(error => {
+        console.error('Errore durante l\'invio!', error.message);
+        btn.innerText = originalText;
+        alert('C\'è stato un errore di connessione. Riprova più tardi.');
+      });
+  }
+</script>
 
 </body>
 </html>
