@@ -1,0 +1,70 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#1FC8B4;--teal-dark:#09746C;--teal-bg:rgba(31,200,180,.06);--text:#1a2933;--muted:#5F5E5A;--light:#F4F1EA;--white:#fff;--red:#D85A30;--amber:#BA7517;--radius:16px}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,sans-serif;color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--teal-dark);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+
+.container{max-width:720px;margin:0 auto;padding:0 24px}
+
+nav{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06);z-index:100;padding:12px 0}
+nav .container{display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-size:18px;font-weight:700;color:var(--teal-dark);display:flex;align-items:center;gap:8px}
+.nav-brand img{width:28px;height:28px;border-radius:6px}
+.nav-links{display:flex;gap:20px;font-size:14px;font-weight:500;color:var(--muted)}
+.nav-links a:hover{color:var(--teal-dark)}
+
+.hero{padding:80px 0 60px;text-align:center}
+.hero h1{font-size:clamp(28px,5vw,42px);font-weight:800;line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.hero h1 span{background:linear-gradient(135deg,var(--teal),var(--teal-dark));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:18px;color:var(--muted);max-width:520px;margin:0 auto 28px;line-height:1.6}
+.btn-store{display:inline-flex;align-items:center;gap:10px;background:var(--teal-dark);color:var(--white);padding:14px 28px;border-radius:12px;font-size:16px;font-weight:600;transition:transform .15s}
+.btn-store:hover{transform:translateY(-2px);text-decoration:none;background:#085041}
+.btn-store svg{width:22px;height:22px;fill:currentColor}
+
+.profiles{padding:60px 0;background:var(--teal-bg)}
+.profiles h2{font-size:24px;font-weight:700;text-align:center;margin-bottom:32px}
+.profile-grid{display:grid;grid-template-columns:1fr;gap:14px}
+.profile-card{background:var(--white);border-radius:var(--radius);padding:20px;border:1px solid rgba(0,0,0,.06)}
+.profile-card h3{font-size:15px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.profile-card p{font-size:14px;color:var(--muted);line-height:1.5}
+.pc-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+
+.how{padding:60px 0}
+.how h2{font-size:24px;font-weight:700;text-align:center;margin-bottom:32px}
+.steps{display:flex;flex-direction:column;gap:24px}
+.step{display:flex;gap:16px;align-items:flex-start}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--teal-bg);color:var(--teal-dark);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid rgba(31,200,180,.2)}
+.step-body h3{font-size:15px;font-weight:700;margin-bottom:2px}
+.step-body p{font-size:14px;color:var(--muted)}
+
+.keywords{padding:60px 0;background:var(--light)}
+.keywords h2{font-size:24px;font-weight:700;text-align:center;margin-bottom:12px}
+.keywords>p{text-align:center;color:var(--muted);font-size:15px;max-width:560px;margin:0 auto 28px}
+.kw-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kw-card{background:var(--white);border-radius:12px;padding:16px;text-align:center;border:1px solid rgba(0,0,0,.06)}
+.kw-card a{font-size:14px;font-weight:600;color:var(--teal-dark)}
+.kw-card p{font-size:12px;color:var(--muted);margin-top:4px}
+
+.cta-bottom{padding:60px 0;text-align:center}
+.cta-bottom h2{font-size:22px;font-weight:700;margin-bottom:12px}
+.cta-bottom p{color:var(--muted);margin-bottom:24px;font-size:15px}
+
+footer{padding:24px 0;border-top:1px solid rgba(0,0,0,.06);text-align:center;font-size:12px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:underline}
+
+.page-hero{padding:60px 0 40px;text-align:center;background:var(--teal-bg)}
+.page-hero h1{font-size:clamp(24px,4.5vw,36px);font-weight:800;line-height:1.25;margin-bottom:12px}
+.page-hero p{font-size:16px;color:var(--muted);max-width:520px;margin:0 auto}
+
+.page-body{padding:48px 0}
+.page-body h2{font-size:20px;font-weight:700;margin:28px 0 10px}
+.page-body p,.page-body li{font-size:15px;color:var(--muted);line-height:1.7}
+.page-body ul{padding-left:20px;margin:8px 0 16px}
+.page-body li{margin-bottom:4px}
+
+@media(min-width:600px){
+  .profile-grid{grid-template-columns:1fr 1fr}
+  .kw-grid{grid-template-columns:repeat(3,1fr)}
+}
